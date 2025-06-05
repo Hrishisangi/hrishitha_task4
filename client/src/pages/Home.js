@@ -22,7 +22,7 @@ function Home() {
 
     const fetchProducts = async () => {
         try {
-            const url = "http://localhost:8080/products";
+            const url = `${import.meta.env.VITE_API_URL}/products`;
             const headers = {
                 headers: {
                     'Authorization': localStorage.getItem('token')
